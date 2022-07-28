@@ -1,86 +1,67 @@
 * {
     box-sizing: border-box;
-    margin:0px;
+    
 }
 
-body {
-    background-color: white;
-}
-
-h1 {
-    margin: 100px;
+h1{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 175%;
+    position:relative;
+    font-size:175%;
+    margin:100px;
+    
 }
 
-section {
-    position: relative;
-    padding: 15px;
-    width: 100%;
-}
-
-p {
-    position: relative;
-    clear: right;
-}
-
-div {
-    position: relative;
+.box{
     background-color: gray;
-    border: 1px solid black;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-}
-
-.title1 {
-    float: right;
-    width: 100px;
-    padding: 5px;
-    text-align: center;
-    background-color: rgb(222, 123, 123);
-    border: 1px solid black;
-    font-size: 125%;
+    border:solid black 1px;
+    overflow:hidden;
+    margin-right:10px;
+    margin-bottom:10px;
+    padding:0px 0px 20px 20px;
     
     
-
-}
-
-.title2 {
-    float: right;
-    color: white;
-    width: 100px;
-    padding: 5px;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 125%;
-    background-color: maroon;
-
-}
-
-.title3 {
-    color: black;
-    float: right;
-    width: 100px;
-    padding: 5px;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 125%;
-    background-color: rgb(215, 205, 115);
-
-}
-
-.content {
-    padding: 5px;
-    border: none;
-    background-color: gray;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    height: 200px;
     
 }
+
+p{
+    font-size:20px;
+    float:left;
+}
+#header1{
+    
+    font-size:35px;
+    float:right;
+    background-color:#FF8182;
+    border:solid black 1px;
+    clear:right;
+}
+#header2{
+    text-align:center;
+    font-size:35px;
+    float:right;
+    background-color:#CF222E;
+    border:solid black 1px;
+
+}
+#header3{
+    text-align:center;
+    font-size:35px;
+    float:right;
+    background-color:#EAC54F;
+    border:solid black 1px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -94,22 +75,25 @@ div {
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .colmn-md-6 {
+    .column-md-6 {
         float: left;
         width: 50%;
-        
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .colmn-md-12 {
+    .column-md-12 {
+        width:100%;
         float: left;
-        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         
     }
 }
 
 
 @media (max-width: 767px) {
-    .colmn-sm-12 {
+    .column-sm-12 {
         float: left;
         width: 100%;
     }
